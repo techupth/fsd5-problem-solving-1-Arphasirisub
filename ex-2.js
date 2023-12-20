@@ -2,6 +2,13 @@
 
 const isPalindrome = function (s) {
   //Start Coding here
+  const word = s;
+  const reverseWord = s.split("").reverse().join("");
+  if (word === reverseWord) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const result1 = isPalindrome("A man, a plan, a canal: Panama");
